@@ -44,9 +44,9 @@ map.mapTypes.set("OSM", new google.maps.ImageMapType({
 function toggleFollow(ele){
     follow = !follow;
     if(follow){
-        ele.innerHTML = "Following";
+        ele.classList.add('active');
     } else {
-        ele.innerHTML = "Not Following";
+        ele.classList.remove('active');
     }
 }
 
